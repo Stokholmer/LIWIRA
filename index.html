@@ -5,39 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>LIWIRA</title>
     <script src="script.js" defer></script>
 </head>
 <body>
-    <main>
-    <header>
-        <div class="header">
+  <header class="navbar">
+    <div class="navbar__burger" onclick="toggleMenu()">☰</div>
 
-            <nav>
+    <nav class="navbar__menu">
+      <a href="#" class="navbar__link">Forside</a>
+      <a href="#" class="navbar__link">Produkter</a>
+      <span class="navbar__logo">MIT LOGO</span>
+      <a href="#" class="navbar__link">Om os</a>
+      <a href="#" class="navbar__link">Kontakt</a>
+    </nav>
 
-            </nav>
-        </div>
-    </header>
-    <div class="hero-slide">
-
+    <div class="navbar__cart">
+      <span class="material-symbols-outlined">shopping_cart</span>
     </div>
-    <div class="forside-kategori">
+  </header>
 
-    </div>
-    <div class="sommer-hits">
+  <!-- Overlay menu -->
+  <div id="overlay" class="overlay">
+    <a href="javascript:void(0)" class="overlay__close" onclick="toggleMenu()">&times;</a>
+    <nav class="overlay__content">
+      <a href="#" class="overlay__link">Forside</a>
+      <a href="#" class="overlay__link">Produkter</a>
+      <a href="#" class="overlay__link">Om os</a>
+      <a href="#" class="overlay__link">Kontakt</a>
+    </nav>
+  </div>
 
-    </div>
-    <div class="mod-lisbeth">
-
-    </div>
-    <div class="events">
-        
-    </div>
-    </main>
-    <footer>
-
-    </footer>
+  <script src="script.js"></script>
 </body>
 </html>
+
