@@ -55,7 +55,7 @@ body {
 
 .navbar__logo {
 font-family: "Playfair Display", serif;
-  font-weight: bold;
+  font-weight:900;
   font-size: 2rem;
   color: #202815;
 }
@@ -96,7 +96,6 @@ font-family: "Playfair Display", serif;
   background-color: #f2f2f2;
 }
 
-/* Overlay (mobile) */
 .overlay {
   height: 100%;
   width: 0;
@@ -146,6 +145,8 @@ font-family: "Playfair Display", serif;
   padding: 20px;
   box-sizing: border-box;
   overflow: hidden;
+  text-align: justify;
+  position: relative;
 }
 
 .hero img {
@@ -155,16 +156,139 @@ font-family: "Playfair Display", serif;
   display: block;
 }
 
-.hero_text{
+.hero .hero_text_left{
+  padding: 20px;
   position: absolute;
-  top: 20%;
+  top: 10%;
   color: #F0ECE3;
   font-family: "Playfair Display", serif;
-  
+  font-size: larger;
+}
+
+.hero .hero_text_right {
+  padding: 20px;
+  position: absolute;
+  bottom: 10%;
+  right: 2%; 
+  color: #F0ECE3;
+  font-family: "Playfair Display", serif;
+  font-size: larger;
+  text-align: right;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.categories__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* gem på mobile */
+.categories__img__desktop {
+  display: none;
+}
+
+.top-sellers {
+  padding: 20px;
+}
+
+.top-sellers__heading {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #202815;
+}
+
+.top-sellers__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Mobile: 2 columns */
+  gap: 15px;
+}
+
+/* Product item */
+.top-sellers__item {
+  text-align: center;
+}
+
+/* Image area */
+.top-sellers__image {
+  width: 100%;
+  padding-top: 100%; /* 1:1 ratio square */
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+/* Product label */
+.top-sellers__label {
+  font-size: 0.9rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Hide extras on mobile */
+.top-sellers__item--desktop-only {
+  display: none;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+.about-us__image {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+.about-us__content {
+  text-align: center;
+}
+
+.about-us__heading {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  text-align: left;
+  margin-bottom: 10px;
+  color: #202815;
+}
+
+.about-us__text {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: left;
+}
+
+.about-us__button {
+  display: inline-block;
+  width: 100%;
+  background-color: #465C26;
+  color: #F0ECE3;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
 }
 
 
-/* Desktop override */
+
 @media screen and (min-width: 625px) {
   .navbar__burger {
     display: none;
@@ -184,6 +308,42 @@ font-family: "Playfair Display", serif;
   .navbar__cart {
     position: relative;
     margin-left: auto;
+  }
+
+  .categories {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .categories__img__desktop {
+    display: block;
+  }
+
+  .top-sellers__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .top-sellers__item--desktop-only {
+    display: block;
+  }
+
+  .about-us {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .about-us__image {
+    width: 50%;
+    height: 300px;
+  }
+
+  .about-us__content {
+    width: 50%;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  .about-us__button {
+    width: 100%;
   }
 }
 
