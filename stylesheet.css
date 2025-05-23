@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: sans-serif;
   padding-top: 60px;
+  background-color: #F0ECE3;
 }
 
 .navbar {
@@ -138,6 +139,30 @@ font-family: "Playfair Display", serif;
 .overlay__link:hover {
   text-decoration:underline;
 }
+
+.hero {
+  width: 100vw;
+  height: 66.666vh;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fill the container and crop as needed */
+  display: block;
+}
+
+.hero_text{
+  position: absolute;
+  top: 20%;
+  color: #F0ECE3;
+  font-family: "Playfair Display", serif;
+  
+}
+
 
 /* Desktop override */
 @media screen and (min-width: 625px) {
