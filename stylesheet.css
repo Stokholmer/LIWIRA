@@ -1,16 +1,20 @@
-/* Mobile first */
 body {
   margin: 0;
   font-family: sans-serif;
+  padding-top: 60px;
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 15px;
-  background-color: #eee;
-  position: relative;
+  background-color: #F0ECE3;
 }
 
 .navbar__burger,
@@ -20,50 +24,99 @@ body {
 }
 
 .navbar__burger {
+  font-size: 24px;
   position: absolute;
   left: 15px;
   cursor: pointer;
+  background: none;
+  border: none;
+  color: #1f1f1f;
 }
 
 .navbar__cart {
   position: absolute;
   right: 15px;
+  color: #465C26;
 }
 
 .navbar__menu {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
+  flex: 1;
+  justify-content: center;
 }
 
 .navbar__link {
-  display: none; /* skjul links på mobil */
+  display: none;
+  
 }
 
 .navbar__logo {
+font-family: "Playfair Display", serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2rem;
+  color: #202815;
 }
 
-/* Material icon styling */
 .material-symbols-outlined {
   font-size: 24px;
   color: #1f1f1f;
   cursor: pointer;
 }
 
-/* Overlay */
+
+/* Desktop dropdown */
+.navbar__item {
+  position: relative;
+}
+
+.navbar__item--has-dropdown:hover .navbar__dropdown {
+  display: block;
+}
+
+.navbar__dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background: #fff;
+  min-width: 150px;
+  z-index: 10;
+}
+
+.navbar__dropdown a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar__dropdown a:hover {
+  background-color: #f2f2f2;
+}
+
+/* Overlay (mobile) */
 .overlay {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 999;
+  z-index: 2000;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,0.95);
+  background-color: #465C26; /* full black */
   overflow-x: hidden;
   transition: 0.3s;
+}
+
+.overlay__close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 36px;
+  color: #F0ECE3;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .overlay__content {
@@ -75,33 +128,31 @@ body {
 
 .overlay__link {
   display: block;
-  color: white;
+  color: #F0ECE3;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   padding: 10px;
   text-decoration: none;
 }
 
-.overlay__close {
-  position: absolute;
-  top: 15px;
-  right: 25px;
-  font-size: 36px;
-  color: white;
-  text-decoration: none;
+.overlay__link:hover {
+  text-decoration:underline;
 }
 
-/* Desktop */
-@media screen and (min-width: 481px) {
+/* Desktop override */
+@media screen and (min-width: 625px) {
   .navbar__burger {
     display: none;
   }
 
   .navbar__link {
-    display: inline;
+    display: block;
+    color: #202815;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
   }
 
   .navbar__menu {
-    flex: 1;
     justify-content: center;
   }
 
@@ -110,3 +161,4 @@ body {
     margin-left: auto;
   }
 }
+

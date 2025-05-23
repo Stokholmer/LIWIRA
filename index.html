@@ -8,38 +8,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>LIWIRA</title>
+    <title>LIWIRA – kunsthåndværk, interiør og delikatesser</title>
     <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="navbar">
-    <div class="navbar__burger" onclick="toggleMenu()">☰</div>
+  <header class="navbar" role="banner">
+    <button id="navbarBurger" class="navbar__burger" aria-label="Åbn menu">☰</button>
 
-    <nav class="navbar__menu">
-      <a href="#" class="navbar__link">Forside</a>
-      <a href="#" class="navbar__link">Produkter</a>
-      <span class="navbar__logo">MIT LOGO</span>
-      <a href="#" class="navbar__link">Om os</a>
-      <a href="#" class="navbar__link">Kontakt</a>
+    <nav class="navbar__menu" role="navigation" aria-label="Primær navigation">
+      <div class="navbar__item navbar__item--has-dropdown">
+        <a href="#" class="navbar__link">Gavekurve</a>
+        <div class="navbar__dropdown">
+          <a href="#">Underside 1</a>
+          <a href="#">Underside 2</a>
+        </div>
+      </div>
+      <div class="navbar__item navbar__item--has-dropdown">
+        <a href="#" class="navbar__link">Kunsthåndværk</a>
+        <div class="navbar__dropdown">
+          <a href="#">Kategori 1</a>
+          <a href="#">Kategori 2</a>
+        </div>
+      </div>
+
+      <span class="navbar__logo">LIWIRA</span>
+
+      <div class="navbar__item navbar__item--has-dropdown">
+        <a href="#" class="navbar__link">Interiør</a>
+        <div class="navbar__dropdown">
+          <a href="#">Team</a>
+          <a href="#">Historie</a>
+        </div>
+      </div>
+      <div class="navbar__item navbar__item--has-dropdown">
+        <a href="#" class="navbar__link">Delikatesser</a>
+        <div class="navbar__dropdown">
+          <a href="#">Support</a>
+          <a href="#">Lokation</a>
+        </div>
+      </div>
     </nav>
 
-    <div class="navbar__cart">
+    <div class="navbar__cart" role="button" tabindex="0" aria-label="Indkøbskurv">
       <span class="material-symbols-outlined">shopping_cart</span>
     </div>
   </header>
 
-  <!-- Overlay menu -->
-  <div id="overlay" class="overlay">
-    <a href="javascript:void(0)" class="overlay__close" onclick="toggleMenu()">&times;</a>
-    <nav class="overlay__content">
-      <a href="#" class="overlay__link">Forside</a>
-      <a href="#" class="overlay__link">Produkter</a>
-      <a href="#" class="overlay__link">Om os</a>
-      <a href="#" class="overlay__link">Kontakt</a>
+  <!-- Mobile menu overlay -->
+  <div id="overlay" class="overlay" role="dialog" aria-modal="true" hidden>
+    <button id="overlayClose" class="overlay__close" aria-label="Luk menu">&times;</button>
+    <nav class="overlay__content" role="navigation" aria-label="Mobil navigation">
+      <a href="#" class="overlay__link">Gavekurv</a>
+      <a href="#" class="overlay__link">Kunsthåndværk</a>
+      <a href="#" class="overlay__link">Interiør</a>
+      <a href="#" class="overlay__link">Delikatesser</a>
     </nav>
   </div>
+  <div class="hero">
+  
 
-  <script src="script.js"></script>
+  </div>
+
+  <main>
+    <p style="padding: 2rem;">Indholdet starter her...</p>
+    <section></section>
+  </main>
+  <!-- Footer menu overlay -->
+<footer class="footer">
+</footer>
 </body>
 </html>
 
