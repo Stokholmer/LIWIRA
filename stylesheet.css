@@ -248,12 +248,11 @@ font-family: "Playfair Display", serif;
   align-items: center;
 }
 
-.about-us__image {
+.about-us__image img {
   width: 100%;
-  height: 250px;
+  height: 100%;
   background-size: cover;
   background-position: center;
-  border-radius: 8px;
 }
 
 .about-us__content {
