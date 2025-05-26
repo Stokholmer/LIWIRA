@@ -287,6 +287,65 @@ font-family: "Playfair Display", serif;
   font-weight: bold;
 }
 
+.footer {
+  background-color: #465C26;
+  color: #F0ECE3;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.footer__main {
+  padding: 0 20px;
+}
+
+.footer__columns {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer__column {
+  font-family: "Roboto", sans-serif;
+}
+
+.footer__heading {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.footer__text {
+  margin: 5px 0;
+}
+
+.footer__bot {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 28px;
+  color: #F0ECE3;
+  margin-bottom: 10px;
+}
+
+.footer__icons a {
+  color: #F0ECE3;
+  transition: color 0.3s;
+}
+
+.footer__icons a:hover {
+  color: #ccc; /* or a brand color */
+}
+
 
 
 @media screen and (min-width: 625px) {
@@ -345,5 +404,22 @@ font-family: "Playfair Display", serif;
   .about-us__button {
     width: 100%;
   }
+
+  .footer__columns {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer__column {
+    flex: 1 1 22%;
+    min-width: 200px;
+  }
+
+  .footer__main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
 }
 

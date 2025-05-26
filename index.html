@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>LIWIRA – kunsthåndværk, interiør og delikatesser</title>
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIWIRA – kunsthåndværk, interiør og delikatesser</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <sprit src="script.js" defer></sprit>
+
 </head>
 <body>
+  
+
   <header class="navbar" role="banner">
     <button id="navbarBurger" class="navbar__burger" aria-label="Åbn menu">☰</button>
 
@@ -65,6 +69,7 @@
     </nav>
   </div>
     <main>
+    <div class="layout"> 
   <div class="hero">
   <img src="Billeder/fifig_A_summer_varm_mood_festive_brutal_frontal_flash_Flash_pho_ac0fa316-ff1d-4271-afbf-6f68b625df5f.png" alt="Hero_image">
     <div class="hero_text_left">
@@ -85,7 +90,7 @@
   </div>
 
   <div class="top-sellers">
-  <h3 class="top-sellers__heading">Top Sellers</h3>
+  <h2>Top Sellers</h2>
 
   <div class="top-sellers__grid">
     <div class="top-sellers__item">
@@ -121,10 +126,10 @@
 </div>
 
 <div class="about-us">
-  <div class="about-us__image" style="background-image: url('about.jpg');"></div>
+  <div class="about-us__image" src="Bil.webp"></div>
 
   <div class="about-us__content">
-    <h3 class="about-us__heading">mød Lisbeth</h3>
+    <h2> mød Lisbeth</h2>
     <p class="about-us__text">
       jeg står bag LIWIRA – en butik med passion for kunsthåndværk, interiør og delikatesser. Min interesse udspringer af en livslang glæde ved æstetik og gode råvarer, og jeg elsker at skabe smukke rammer – både visuelt og kulinarisk. Hos LIWIRA finder du nøje udvalgte produkter, helst danskproducerede i god kvalitet, og altid med fokus på ansvarlig produktion. Kig forbi Jernbanegade 16 i Langeskov - vi deler butik med Pejsemontering Fyn.
     </p>
@@ -132,18 +137,52 @@
   </div>
 </div>
 
-
-
-
-
-
-
-    <p style="padding: 2rem;">Indholdet starter her...</p>
-  
+  </div>
   </main>
-  <!-- Footer menu overlay -->
+  <!-- Footer menu -->
 <footer class="footer">
-</footer>
+  <div class="footer__main">
+    <div class="footer__columns">
+      <div class="footer__column">
+        <h4 class="footer__heading">SHOP</h4>
+        <p class="footer__text">Gavekurv</p>
+        <p class="footer__text">Kunsthåndværk</p>
+        <p class="footer__text">Interiør</p>
+        <p class="footer__text">Delikatesser</p>
+      </div>
+
+      <div class="footer__column">
+        <h4 class="footer__heading">BUTIK</h4>
+        <p class="footer__text">LIWIRA</p>
+        <p class="footer__text">Jernbanegade 16,<br>5550 Langeskov</p>
+      </div>
+
+      <div class="footer__column">
+        <h4 class="footer__heading">KONTAKT</h4>
+        <p class="footer__text">+45 2426 7971</p>
+        <p class="footer__text">kontakt@dinpejs.dk</p>
+      </div>
+
+      <div class="footer__column">
+        <h4 class="footer__heading">KUNDESERVICE</h4>
+        <p class="footer__text">Levering</p>
+        <p class="footer__text">Reklamation og returnering</p>
+        <p class="footer__text">Handelsbetingelser</p>
+        </div>
+        </div>
+        </div>
+
+
+
+    <div class="footer__bot">
+      <div class="footer__icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p class="footer__text"><br>cvr: 34116083</p>
+    </div>
+  </footer>
 </body>
 </html>
-
