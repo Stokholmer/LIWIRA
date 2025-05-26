@@ -1,37 +1,10 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const burger = document.getElementById("navbarBurger");
-  const overlay = document.getElementById("overlay");
-  const closeBtn = document.getElementById("overlayClose");
-
-  burger.addEventListener("click", () => {
-    overlay.hidden = false;
-    overlay.style.width = "100%";
-  });
-
-  closeBtn.addEventListener("click", () => {
-    overlay.style.width = "0";
-    setTimeout(() => {
-      overlay.hidden = true;
-    }, 300);
-  });
-});
-
-
-// -------------------------------------------------------------------------------
-// -------------------------------------------------------------------------------
-// SOFIE KODE START
-// Har taget inspiration fra:
-// https://www.w3schools.com/howto/howto_js_portfolio_filter.asp 
-// -------------------------------------------------------------------------------
-// -------------------------------------------------------------------------------
-
 // "document" er en global variabel udstillet af browseren.
 // vi tilføjer en event listener på eventet "DOMContentLoaded", som bliver 
 // sendt ud når browseren er færdig med at indlæse hele siden.
 // i den event listener eksekverer vi to metoder der henholdvis laver en "default"
 // filtrering, efterfulgt af en metode der sætter event listeners på filter knapperne.
 document.addEventListener("DOMContentLoaded", function () {
-  filterSelection("gallery__alle");
+  filterSelection("drikkevare__all");
   initFilterButtons();
 });
 
@@ -44,10 +17,10 @@ function filterSelection(category) {
   console.log("Filtering by category: " + category);
   // vi tager alle elementer i dokumentet med class "gallery_column" (som er elementerne i galleriet)
   // og gemmer dem i et const array.
-  const items = document.getElementsByClassName("gallery__column");
+  const items = document.getElementsByClassName("drikkevare__all");
   // Sring "" Klassen der styrer synligheden. vi gemmer det her så det er lettere at ændre 
   // hvis nødvendigt
-  const showClass = "gallery__show";
+  const showClass = "drikkevare__all";
 
   // her looper vi igennem arrayet af galleri elementer
   for (let i = 0; i < items.length; i++) { 
@@ -58,7 +31,7 @@ function filterSelection(category) {
     // i en "if" der gør således:
     // "hvis category er i lig med "gallery_alle" er true 
     // ELLER elementet i arrayet fra index "i" indeholder samme class som parameteren "category" er TRUE
-    if (category === "gallery__alle" || items[i].classList.contains(category)) {
+    if (category === "drikkevare__all" || items[i].classList.contains(category)) {
       // tilføj værdien fra showClass til class listen på elementet i gallery arrayet
       items[i].classList.add(showClass); 
     }
@@ -70,14 +43,14 @@ function filterSelection(category) {
 function initFilterButtons() {
   console.log("Initializing filter buttons."); // Så kan jeg se at den køre, når den skal
   // Det er Const variabel - gemmer containeren for filter knapperne
-  const btnContainer = document.getElementById("gallery__filter_btns_container"); 
+  const btnContainer = document.getElementById("drikkevare__filter_btns_container"); 
   // tjekker om btnContainer er false eller undefined, altså hvis den ikke findes stopper vi
   // kørslen her
   if (!btnContainer) return; 
 
   // fra btnContainer finder vi alle elementer med class name "gallery__filter__btn"
   // og gemmer dem i et array
-  const btns = btnContainer.getElementsByClassName("gallery__filter__btn");
+  const btns = btnContainer.getElementsByClassName("drikkevare__filter__btn");
 
   // nu looper vi gennem btns arrayet med alle knapperne
   for (let i = 0; i < btns.length; i++) {

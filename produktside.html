@@ -1,120 +1,295 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIWIRA – kunsthåndværk, interiør og delikatesser</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+
+</head>
+<body>
+  
+
+  <header class="navbar" role="banner">
+    <button id="navbarBurger" class="navbar__burger" aria-label="Åbn menu">☰</button>
+
+    <nav class="navbar__menu" role="navigation" aria-label="Primær navigation">
+      <div class="navbar__item navbar__item--has-dropdown">
+        <a href="#" class="navbar__link">Gavekurve</a>
+        <div class="navbar__dropdown">
+          <a href="#">Design selv</a>
+          <a href="#">Færdiglavet</a>
+        </div>
+      </div>
+      <div class="navbar__item navbar__item--has-dropdown">
+        <a href="#" class="navbar__link">Delikatesser</a>
+        <div class="navbar__dropdown">
+          <a href="#">Chokolade</a>
+          <a href="#">Drikkevarer</a>
+          <a href="#">Tapas</a>
+        </div>
+      </div>
+
+      <span class="navbar__logo">LIWIRA</span>
+
+      <div class="navbar__item navbar__item--has-dropdown">
+        <a href="#" class="navbar__link">Forbrugskunst</a>
+        <div class="navbar__dropdown">
+          <a href="#">Keramik </a>
+          <a href="#">Glas</a>
+        </div>
+      </div>
+      <div class="navbar__item navbar__item--has-dropdown">
+        <a href="#" class="navbar__link">Livsstil</a>
+        <div class="navbar__dropdown">
+          <a href="#">Velvære</a>
+          <a href="#">Interiør</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="navbar__cart" role="button" tabindex="0" aria-label="Indkøbskurv">
+      <span class="material-symbols-outlined">shopping_cart</span>
+    </div>
+  </header>
+    <main>
+    <div class="layout"> 
 
 
-    <div class="gallery"> 
-      <h2>Vores frivillige</h2>
-      <div id="gallery__filter_btns_container" class="btn-container">
-        <button class="btn gallery__filter__btn active" data-filter="gallery__alle">Alle</button>
-        <button class="btn gallery__filter__btn" data-filter="gallery__unge">Ungerådgiver</button>
-        <button class="btn gallery__filter__btn" data-filter="gallery__chat">Chat-rådgiver</button>
-        <button class="btn gallery__filter__btn" data-filter="gallery__formidling">Formidlingsfrivillig</button>
+
+
+
+
+<div class="top-sellers">
+  <p>Delikatesser > Drikkevare</p>
+  <h2>Drikkevares</h2>
+
+  <div class="top-sellers__grid">
+    <div class="top-sellers__item">
+      <img src="Billeder/sobe_2.webp" alt="Karmel Havsalt" class="top-sellers__image" />
+      <div class="top-sellers__content">
+        <p class="top-sellers__brand">Annas Gourmet</p>
+        <h3>KARMEL<br>HAVSALT</h3>
+        <div class="top-sellers__footer">
+          <span class="top-sellers__price">55,00 Kr.</span>
+          <span class="material-symbols-outlined">add_shopping_cart</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-sellers__item">
+      <img src="Billeder/sobe_2.webp" alt="Karmel Havsalt" class="top-sellers__image" />
+      <div class="top-sellers__content">
+        <p class="top-sellers__brand">Annas Gourmet</p>
+        <h3>KARMEL<br>HAVSALT</h3>
+        <div class="top-sellers__footer">
+          <span class="top-sellers__price">55,00 Kr.</span>
+          <span class="material-symbols-outlined">add_shopping_cart</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-sellers__item">
+      <img src="Billeder/sobe_2.webp" alt="Karmel Havsalt" class="top-sellers__image" />
+      <div class="top-sellers__content">
+        <p class="top-sellers__brand">Annas Gourmet</p>
+        <h3>KARMEL<br>HAVSALT</h3>
+        <div class="top-sellers__footer">
+          <span class="top-sellers__price">55,00 Kr.</span>
+          <span class="material-symbols-outlined">add_shopping_cart</span>
+
+        </div>
+      </div>
+    </div>
+
+        <div class="top-sellers__item">
+      <img src="Billeder/sobe_2.webp" alt="Karmel Havsalt" class="top-sellers__image" />
+      <div class="top-sellers__content">
+        <p class="top-sellers__brand">Annas Gourmet</p>
+        <h3>KARMEL<br>HAVSALT</h3>
+        <div class="top-sellers__footer">
+          <span class="top-sellers__price">55,00 Kr.</span>
+          <span class="material-symbols-outlined">add_shopping_cart</span>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="drikkevare"> 
+      <h2>Drikkevarer</h2>
+      <div id="drikkevare__filter_btns_container" class="btn-container">
+        <button class="btn drikkevare__filter__btn active" data-filter="drikkevare__all">Alle</button>
+        <button class="btn drikkevare__filter__btn" data-filter="drikkevare__juice">Juice</button>
+        <button class="btn drikkevare__filter__btn" data-filter="drikkevare__kaffe">Kaffe</button>
+        <button class="btn drikkevare__filter__btn" data-filter="drikkevare__gin">Gin</button>
+        <button class="btn drikkevare__filter__btn" data-filter="drikkevare__vin">Vin</button>
+        <button class="btn drikkevare__filter__btn" data-filter="drikkevare__øl">Øl</button>
       </div>
     </div>
       
       <!-- Frivillig Gallery Grid -->
-      <div class="gallery__row">
-          <div class="gallery__column gallery__unge">
-            <div class="gallery__polaroid">
-              <img src="billeder/vores-frivillige_1.webp" alt="billede af frivillig Emma">
+      <div class="drikkevare__row">
+          <div class="drikkevare__column drikkevare__gin">
+                    <div class="top-sellers__item">
+       <img src="billeder/Gin&mango.webp" alt="billede af frivillig Emma" class="top-sellers__image" />
+      <div class="top-sellers__content">
+        <p class="top-sellers__brand">Annas Gourmet</p>
+        <h3>KARMEL<br>HAVSALT</h3>
+        <div class="top-sellers__footer">
+          <span class="top-sellers__price">55,00 Kr.</span>
+          <span class="material-symbols-outlined">add_shopping_cart</span>
+        </div>
+      </div>
+    </div>
+
+            <div class="drikkevare__photo">
+              <img src="billeder/Gin&mango.webp" alt="billede af frivillig Emma">
               <h4>Emma</h4>
             </div>
           </div>
-          <div class="gallery__column gallery__chat">
-            <div class="gallery__polaroid">
-              <img src="billeder/vores-frivillige_2.webp" alt="billede af frivillig Magnus">
+          <div class="drikkevare__column drikkevare__kaffe">
+            <div class="drikkevare__photo">
+              <img src="billeder/Is-kaffe.webp" alt="billede af frivillig Magnus">
               <h4>Magnus</h4>
             </div>
           </div>
-          <div class="gallery__column gallery__formidling">
-            <div class="gallery__polaroid">
-              <img src="billeder/vores-frivillige_3.webp" alt="billede af frivillig Ida">
+          <div class="drikkevare__column drikkevare__all">
+            <div class="drikkevare__photo">
+              <img src="billeder/AKVAVIT.webp" alt="billede af frivillig Ida">
               <h4>Ida</h4>
             </div>
           </div>
-          <div class="gallery__column gallery__unge">
-            <div class="gallery__polaroid">
-              <img src="billeder/vores-frivillige_4.webp" alt="billede af frivillig Laura">
+          <div class="drikkevare__column drikkevare__all">
+            <div class="drikkevare__photo">
+              <img src="billeder/Cider.webp" alt="billede af frivillig Laura">
               <h4>Laura</h4>
             </div>
           </div>
           
-          <div class="gallery__column gallery__chat">
-            <div class="gallery__polaroid">
-              <img src="billeder/vores-frivillige_5.webp" alt="billede af frivillig Frederik">
+          <div class="drikkevare__olumn drikkevare__gin">
+            <div class="drikkevare__photo">
+              <img src="billeder/Gin.webp" alt="billede af frivillig Frederik">
               <h4>Frederik</h4>
             </div>
           </div>
-          <div class="gallery__column gallery__formidling">
-            <div class="gallery__polaroid">
-              <img src="billeder/vores-frivillige_6.webp" alt="billede af frivillig Aisha">
+          <div class="drikkevare__column drikkevare__kaffe">
+            <div class="drikkevare__photo">
+              <img src="billeder/kaffe.webp" alt="billede af frivillig Aisha">
               <h4>Aisha</h4>
             </div>
           </div>
-          <div class="gallery__column gallery__unge">
-            <div class="gallery__polaroid">
-              <img src="billeder/vores-frivillige_7.webp" alt="billede af frivillig Tung">
+          <div class="drikkevare__column drikkevare__juice">
+            <div class="drikkevare__photo">
+              <img src="billeder/Most.webp" alt="billede af frivillig Tung">
               <h4>Tung</h4>
             </div>
           </div>
-          <div class="gallery__column gallery__chat">
-            <div class="gallery__polaroid">
-              <img src="billeder/vores-frivillige_8.webp" alt="billede af frivillig Sofie">
+          <div class="drikkevare__column drikkevare__juice">
+            <div class="drikkevare__photo">
+              <img src="billeder/Most_2.webp" alt="billede af frivillig Sofie">
               <h4>Sofie</h4>
             </div>
           </div>
-        
-          <div class="gallery__column gallery__formidling">
-            <div class="gallery__polaroid">
-              <img src="billeder/vores-frivillige_9.webp" alt="billede af frivillig Oscar">
+          <div class="drikkevare__column drikkevare__vin">
+            <div class="drikkevare__photo">
+              <img src="billeder/Red-Win.webp" alt="billede af frivillig Oscar">
               <h4>Oscar</h4>
             </div>
           </div>
-          <div class="gallery__column gallery__unge">
-            <div class="gallery__polaroid">
-              <img src="billeder/vores-frivillige_10.webp" alt="billede af frivillig Noor">
+          <div class="drikkevare__column drikkevare__øl">
+            <div class="drikkevare__photo">
+              <img src="billeder/ØL.webp" alt="billede af frivillig Noor">
               <h4>Noor</h4>
             </div>
           </div>
-          <div class="gallery__column gallery__chat">
-            <div class="gallery__polaroid">
-              <img src="billeder/vores-frivillige_11.webp" alt="billede af frivillig Emil">
+          <div class="drikkevare__photocolumn drikkevare__øl">
+            <div class="drikkevare__photo">
+              <img src="billeder/øl_2.webp" alt="billede af frivillig Emil">
               <h4>Emil</h4>
             </div>
           </div>
-          <div class="gallery__column gallery__formidling">
-            <div class="gallery__polaroid">
-              <img src="billeder/vores-frivillige_12.webp" alt="billede af frivillig Fatima">
-              <h4>Fatima</h4>
-            </div>
-          </div>
-      
-          <div class="gallery__column gallery__chat">
-              <div class="gallery__polaroid">
-                <img src="billeder/vores-frivillige_13.webp" alt="billede af frivillig Mathilde">
-                <h4>Mathilde</h4>
-              </div>
-            </div>
-            <div class="gallery__column gallery__formidling">
-              <div class="gallery__polaroid">
-                <img src="billeder/vores-frivillige_14.webp" alt="billede af frivillig Elias">
-                <h4>Elias</h4>
-              </div>
-            </div>
-            <div class="gallery__column gallery__unge">
-              <div class="gallery__polaroid">
-                <img src="billeder/vores-frivillige_15.webp" alt="billede af frivillig Freja">
-                <h4>Freja</h4>
-              </div>
-            </div>
-            <div class="gallery__column gallery__chat gallery__unge gallery__formidling">
-              <a href=""> <!-- Her skal linket til sign up -->
-                  <div class="gallery__polaroid">
-                    <div class="gallery__font-vi">
-                      <img src="billeder/vores-frivillige_16.webp" alt="vi mangler dig">
-                      <h4>vi <br> mangler <br> dig</h4>
-                    </div>
-                  </div>
-              </a>
-            </div>
       </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
+  </div>
+  </main>
+  <!-- Footer menu -->
+<footer class="footer">
+  <div class="footer__main">
+    <div class="footer__columns">
+      <div class="footer__column">
+        <h4 class="footer__heading">SHOP</h4>
+        <p class="footer__text">Gavekurv</p>
+        <p class="footer__text">Kunsthåndværk</p>
+        <p class="footer__text">Interiør</p>
+        <p class="footer__text">Delikatesser</p>
+      </div>
+
+      <div class="footer__column">
+        <h4 class="footer__heading">BUTIK</h4>
+        <p class="footer__text">LIWIRA</p>
+        <p class="footer__text">Jernbanegade 16,<br>5550 Langeskov</p>
+      </div>
+
+      <div class="footer__column">
+        <h4 class="footer__heading">KONTAKT</h4>
+        <p class="footer__text">+45 2426 7971</p>
+        <p class="footer__text">kontakt@dinpejs.dk</p>
+      </div>
+
+      <div class="footer__column">
+        <h4 class="footer__heading">KUNDESERVICE</h4>
+        <p class="footer__text">Levering</p>
+        <p class="footer__text">Reklamation og returnering</p>
+        <p class="footer__text">Handelsbetingelser</p>
+        </div>
+        </div>
+        </div>
+
+    <div class="footer__bot">
+      <div class="footer__icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p class="footer__text"><br>cvr: 34116083</p>
+    </div>
+  </footer>
+</body>
+</html>

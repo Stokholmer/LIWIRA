@@ -135,23 +135,21 @@ font-family: "Playfair Display", serif;
   display: block;
 }
 
-.hero .hero_text_left{
+.hero .hero_text_left h2{
   padding: 20px;
   position: absolute;
   top: 10%;
   color: #F0ECE3;
   font-family: "Playfair Display", serif;
-  font-size: larger;
 }
 
-.hero .hero_text_right {
+.hero .hero_text_right h2{
   padding: 20px;
   position: absolute;
   bottom: 10%;
   right: 2%; 
   color: #F0ECE3;
-  font-family: "Playfair Display", serif;
-  font-size: larger;
+
   text-align: right;
 }
 
@@ -177,7 +175,6 @@ font-family: "Playfair Display", serif;
 
 .top-sellers {
   padding: 20px;
-  text-align: center;
 }
 
 .top-sellers__grid {
@@ -190,7 +187,7 @@ font-family: "Playfair Display", serif;
 
 .top-sellers__item {
   width: calc(50% - 8px);
-  border: 2px solid #3c4b2f;
+  border: 2px solid #465C26;
   background-color: #fefcf8;
   box-sizing: border-box;
   font-family: sans-serif;
@@ -201,7 +198,7 @@ font-family: "Playfair Display", serif;
 .top-sellers__image {
   width: 100%;
   display: block;
-  border-bottom: 2px solid #3c4b2f;
+  border-bottom: 2px solid #465C26;
 }
 
 .top-sellers__content {
@@ -212,7 +209,7 @@ font-family: "Playfair Display", serif;
 }
 
 .top-sellers__brand {
-  color: #3c4b2f;
+  color: #465C26;
   font-style: italic;
   margin: 0;
   font-size: 0.9rem;
@@ -225,12 +222,13 @@ font-family: "Playfair Display", serif;
   align-items: center;
   margin-top: auto;
   padding-top: 8px;
-  border-top: 2px solid #3c4b2f;
+  border-top: 2px solid #465C26;
 }
 
 .top-sellers__price {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0px 0px 5px 5px;
 }
 
 .top-sellers__cart-btn {
@@ -238,7 +236,7 @@ font-family: "Playfair Display", serif;
   border: none;
   font-size: 1.4rem;
   cursor: pointer;
-  color: #3c4b2f;
+  color: #465C26;
 }
 
 .material-symbols-outlined {
@@ -248,6 +246,8 @@ font-family: "Playfair Display", serif;
     'GRAD' 0,
     'opsz' 24;
   font-size: 48px; /* Change icon size */
+  padding: 0px 5px 5px 15px;
+  color: #465C26;
 }
 
 .about-us {
@@ -287,14 +287,15 @@ font-family: "Playfair Display", serif;
 .about-us__button {
   display: inline-block;
   width: 100%;
-  background-color: #465C26;
-  color: #F0ECE3;
+  background-color: #C2D1A7;
+  color: #465C26;
   text-align: center;
   text-decoration: none;
-  border-radius: 6px;
   font-weight: bold;
   padding-top: 12px;
   padding-bottom: 12px;
+  border: 2px solid #465C26;
+  text-transform:uppercase;
 }
 
 .footer {
@@ -358,7 +359,144 @@ font-family: "Playfair Display", serif;
 
 
 
+
+
+
+
+
+
+/* Række med flexbox til billedgrid */
+.drikkevare__row {
+  margin: 0.2rem -0.2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Afstand mellem kolonner */
+.drikkevare__row,
+.drikkevare__row > .drikkevare__column {
+  padding: 3px;
+}
+
+/* Standard: 2 billeder per række på mobil */
+.drikkevare__column {
+  width: 50%;
+  display: none; /* Skjul alle som standard */
+}
+
+/* Billedstyling - fylder hele containeren */
+.drikkevare img {
+  width: 100%;       
+  height: auto;     
+  object-fit: cover; 
+  max-height: 100%; 
+}
+
+/* Container til hvert billede + tekst */
+.drikkevare__photo {
+  position: relative;
+  display: inline-block;
+  filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.15));
+  margin: 0;
+}
+
+/* Dekorative linjer (kun på mobil) */
+.drikkevare__photo:before {
+  position: absolute;
+  top: 0;
+  left: -8px;
+  height: 100%;
+  width: 4px;
+  border-radius: 2px 0 0 2px;
+}
+
+.drikkevare__photo:after {
+  position: absolute;
+  top: 0;
+  right: -8px;
+  height: 100%;
+  width: 4px;
+  border-radius: 0 2px 2px 0;
+}
+
+/* Vis filtrerede elementer */
+.drikkevare__show {
+  display: block;
+}
+
+/* Knap-container til filtrering */
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-direction: row;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+/* Knapper til kategori-filtrering */
+.btn {
+  display: inline-block;
+  width: 100%;
+  background-color: #C2D1A7;
+  color: #465C26;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 2px solid #465C26;
+  text-transform:uppercase;
+}
+
+/* Hover-effekt til knapper */
+.btn:hover {
+  background-color: #7B9261;
+  color: #FFFBF7;
+}
+
+/* Aktiv knap (valgt filter) */
+.btn.active {
+  background-color: #465C26;
+  color: #FFFBF7;
+}
+
+/* Standard tekst på billeder */
+.drikkevare__photo h4 {
+  position: absolute; 
+  bottom: 0; 
+  rotate: 8deg;
+  left: 50%; 
+  transform: translateX(-60%); 
+  margin: 0; 
+  padding: 5px 5px; 
+  color: #D4257D;
+  opacity: 85%;
+  width: 100%; 
+  text-align: center; 
+  box-sizing: border-box; 
+  font-size: 6.2vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 625px) {
+  
+  .layout
+  
+  
   .navbar__burger {
     display: none;
   }
@@ -427,6 +565,63 @@ font-family: "Playfair Display", serif;
     margin: 0 auto;
   }
 
+
+
+
+
+
+
+
+
+  h2 {
+    font-size: 4.5vw; /* Mindre skrift på større skærme */
+  }
+
+  h4 {
+    font-size: 3vw;
+  }
+
+  /* Mere luft mellem billeder */
+  .gallery__row,
+  .gallery__row > .gallery__column {
+    padding: 8px;
+  }
+
+  /* 4 billeder per række på desktop */
+  .gallery__column {
+    width: 25%;
+  }
+
+  /* Fjern dekorative linjer på desktop */
+  .gallery__polaroid:before,
+  .gallery__polaroid:after {
+    display: none;
+  }
+
+  /* Knapper med mere luft */
+  .btn-container {
+    gap: 16px;
+  }
+
+  .btn {
+    flex: 1;
+    min-width: 100px;
+    font-size: 1.5vw; /* Mindre tekst på desktop */
+    width: auto;
+  }
+
+  /* Mindre tekst på billeder */
+  .gallery__polaroid .gallery__font-vi h4 {
+    font-size: 2vw;
+  }
+
+  .gallery__polaroid h4 {
+    font-size: inherit;
+    font-size: 2.8vw;
+  }
+
 }
+  /* Sofie slut */
+
 
 
