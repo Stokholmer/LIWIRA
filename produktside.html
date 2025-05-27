@@ -59,190 +59,177 @@
     </div>
   </header>
     <main>
-    <div class="layout"> 
+   <!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drikkevarer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body>
 
+  <section class="drinks">
+    <h2>Drikkevarer</h2>
 
+    <div class="drinks__btn-container" id="drinks__btn-container">
+      <button class="drinks__btn active" data-filter="drinks__alle">Alle</button>
+      <button class="drinks__btn" data-filter="drinks__kolde">Kolde drikke</button>
+      <button class="drinks__btn" data-filter="drinks__varme">Varme drikke</button>
+      <button class="drinks__btn" data-filter="drinks__alkohol">Alkohol</button>
+    </div>
 
+    <div class="drinks__grid">
+      <!-- 4 kolde -->
+      <div class="drinks__item drinks__kolde drinks__show">
+        <img src="Billeder/sobe_1.webp" alt="Sobe Mango" class="drinks__image" />
+        <div class="drinks__content">
+          <p class="drinks__brand">Sobe</p>
+          <h3>MANGO<br>PASSION</h3>
+          <div class="drinks__footer">
+            <span class="drinks__price">35,00 Kr.</span>
+            <span class="material-symbols-outlined">add_shopping_cart</span>
+          </div>
+        </div>
+      </div>
 
+      <div class="drinks__item drinks__kolde drinks__show">
+        <img src="Billeder/cola.webp" alt="Cola Zero" class="drinks__image" />
+        <div class="drinks__content">
+          <p class="drinks__brand">Coca-Cola</p>
+          <h3>COLA<br>ZERO</h3>
+          <div class="drinks__footer">
+            <span class="drinks__price">20,00 Kr.</span>
+            <span class="material-symbols-outlined">add_shopping_cart</span>
+          </div>
+        </div>
+      </div>
 
+      <div class="drinks__item drinks__kolde drinks__show">
+        <img src="Billeder/lemonade.webp" alt="Citron Lemonade" class="drinks__image" />
+        <div class="drinks__content">
+          <p class="drinks__brand">Limon</p>
+          <h3>CITRON<br>LEMONADE</h3>
+          <div class="drinks__footer">
+            <span class="drinks__price">28,00 Kr.</span>
+            <span class="material-symbols-outlined">add_shopping_cart</span>
+          </div>
+        </div>
+      </div>
 
-<div class="top-sellers">
-  <p>Delikatesser > Drikkevare</p>
-  <h2>Drikkevares</h2>
+      <div class="drinks__item drinks__kolde drinks__show">
+        <img src="Billeder/ice_tea.webp" alt="Ice Tea Peach" class="drinks__image" />
+        <div class="drinks__content">
+          <p class="drinks__brand">Fuze</p>
+          <h3>ICE TEA<br>PEACH</h3>
+          <div class="drinks__footer">
+            <span class="drinks__price">25,00 Kr.</span>
+            <span class="material-symbols-outlined">add_shopping_cart</span>
+          </div>
+        </div>
+      </div>
 
-  <div class="top-sellers__grid">
-    <div class="top-sellers__item">
-      <img src="Billeder/sobe_2.webp" alt="Karmel Havsalt" class="top-sellers__image" />
-      <div class="top-sellers__content">
-        <p class="top-sellers__brand">Annas Gourmet</p>
-        <h3>KARMEL<br>HAVSALT</h3>
-        <div class="top-sellers__footer">
-          <span class="top-sellers__price">55,00 Kr.</span>
-          <span class="material-symbols-outlined">add_shopping_cart</span>
+      <!-- 4 varme -->
+      <div class="drinks__item drinks__varme drinks__show">
+        <img src="Billeder/kaffe.webp" alt="Kaffe" class="drinks__image" />
+        <div class="drinks__content">
+          <p class="drinks__brand">KaffeKunst</p>
+          <h3>ØKO<br>KAFFE</h3>
+          <div class="drinks__footer">
+            <span class="drinks__price">30,00 Kr.</span>
+            <span class="material-symbols-outlined">add_shopping_cart</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drinks__item drinks__varme drinks__show">
+        <img src="Billeder/te.webp" alt="Grøn Te" class="drinks__image" />
+        <div class="drinks__content">
+          <p class="drinks__brand">Tehuset</p>
+          <h3>GRØN<br>TE</h3>
+          <div class="drinks__footer">
+            <span class="drinks__price">25,00 Kr.</span>
+            <span class="material-symbols-outlined">add_shopping_cart</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drinks__item drinks__varme drinks__show">
+        <img src="Billeder/varm_kakao.webp" alt="Varm Kakao" class="drinks__image" />
+        <div class="drinks__content">
+          <p class="drinks__brand">ChokoBar</p>
+          <h3>VARM<br>KAKAO</h3>
+          <div class="drinks__footer">
+            <span class="drinks__price">32,00 Kr.</span>
+            <span class="material-symbols-outlined">add_shopping_cart</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drinks__item drinks__varme drinks__show">
+        <img src="Billeder/latte.webp" alt="Vanilje Latte" class="drinks__image" />
+        <div class="drinks__content">
+          <p class="drinks__brand">LatteLove</p>
+          <h3>VANILJE<br>LATTE</h3>
+          <div class="drinks__footer">
+            <span class="drinks__price">38,00 Kr.</span>
+            <span class="material-symbols-outlined">add_shopping_cart</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 alkohol -->
+      <div class="drinks__item drinks__alkohol drinks__show">
+        <img src="Billeder/vin.webp" alt="Rødvin" class="drinks__image" />
+        <div class="drinks__content">
+          <p class="drinks__brand">Vinhuset</p>
+          <h3>SYRAH<br>RØDVIN</h3>
+          <div class="drinks__footer">
+            <span class="drinks__price">125,00 Kr.</span>
+            <span class="material-symbols-outlined">add_shopping_cart</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drinks__item drinks__alkohol drinks__show">
+        <img src="Billeder/hvidvin.webp" alt="Hvidvin" class="drinks__image" />
+        <div class="drinks__content">
+          <p class="drinks__brand">Vinorama</p>
+          <h3>CHARDONNAY<br>HVIDVIN</h3>
+          <div class="drinks__footer">
+            <span class="drinks__price">119,00 Kr.</span>
+            <span class="material-symbols-outlined">add_shopping_cart</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drinks__item drinks__alkohol drinks__show">
+        <img src="Billeder/øl.webp" alt="Mørk Øl" class="drinks__image" />
+        <div class="drinks__content">
+          <p class="drinks__brand">Bryghuset</p>
+          <h3>MØRK<br>ØL</h3>
+          <div class="drinks__footer">
+            <span class="drinks__price">35,00 Kr.</span>
+            <span class="material-symbols-outlined">add_shopping_cart</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drinks__item drinks__alkohol drinks__show">
+        <img src="Billeder/cocktail.webp" alt="Cocktail" class="drinks__image" />
+        <div class="drinks__content">
+          <p class="drinks__brand">Mixology</p>
+          <h3>PASSION<br>MOJITO</h3>
+          <div class="drinks__footer">
+            <span class="drinks__price">65,00 Kr.</span>
+            <span class="material-symbols-outlined">add_shopping_cart</span>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="top-sellers__item">
-      <img src="Billeder/sobe_2.webp" alt="Karmel Havsalt" class="top-sellers__image" />
-      <div class="top-sellers__content">
-        <p class="top-sellers__brand">Annas Gourmet</p>
-        <h3>KARMEL<br>HAVSALT</h3>
-        <div class="top-sellers__footer">
-          <span class="top-sellers__price">55,00 Kr.</span>
-          <span class="material-symbols-outlined">add_shopping_cart</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="top-sellers__item">
-      <img src="Billeder/sobe_2.webp" alt="Karmel Havsalt" class="top-sellers__image" />
-      <div class="top-sellers__content">
-        <p class="top-sellers__brand">Annas Gourmet</p>
-        <h3>KARMEL<br>HAVSALT</h3>
-        <div class="top-sellers__footer">
-          <span class="top-sellers__price">55,00 Kr.</span>
-          <span class="material-symbols-outlined">add_shopping_cart</span>
-
-        </div>
-      </div>
-    </div>
-
-        <div class="top-sellers__item">
-      <img src="Billeder/sobe_2.webp" alt="Karmel Havsalt" class="top-sellers__image" />
-      <div class="top-sellers__content">
-        <p class="top-sellers__brand">Annas Gourmet</p>
-        <h3>KARMEL<br>HAVSALT</h3>
-        <div class="top-sellers__footer">
-          <span class="top-sellers__price">55,00 Kr.</span>
-          <span class="material-symbols-outlined">add_shopping_cart</span>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-    <div class="drikkevare"> 
-      <h2>Drikkevarer</h2>
-      <div id="drikkevare__filter_btns_container" class="btn-container">
-        <button class="btn drikkevare__filter__btn active" data-filter="drikkevare__all">Alle</button>
-        <button class="btn drikkevare__filter__btn" data-filter="drikkevare__juice">Juice</button>
-        <button class="btn drikkevare__filter__btn" data-filter="drikkevare__kaffe">Kaffe</button>
-        <button class="btn drikkevare__filter__btn" data-filter="drikkevare__gin">Gin</button>
-        <button class="btn drikkevare__filter__btn" data-filter="drikkevare__vin">Vin</button>
-        <button class="btn drikkevare__filter__btn" data-filter="drikkevare__øl">Øl</button>
-      </div>
-    </div>
-      
-      <!-- Frivillig Gallery Grid -->
-      <div class="drikkevare__row">
-          <div class="drikkevare__column drikkevare__gin">
-                    <div class="top-sellers__item">
-       <img src="billeder/Gin&mango.webp" alt="billede af frivillig Emma" class="top-sellers__image" />
-      <div class="top-sellers__content">
-        <p class="top-sellers__brand">Annas Gourmet</p>
-        <h3>KARMEL<br>HAVSALT</h3>
-        <div class="top-sellers__footer">
-          <span class="top-sellers__price">55,00 Kr.</span>
-          <span class="material-symbols-outlined">add_shopping_cart</span>
-        </div>
-      </div>
-    </div>
-
-            <div class="drikkevare__photo">
-              <img src="billeder/Gin&mango.webp" alt="billede af frivillig Emma">
-              <h4>Emma</h4>
-            </div>
-          </div>
-          <div class="drikkevare__column drikkevare__kaffe">
-            <div class="drikkevare__photo">
-              <img src="billeder/Is-kaffe.webp" alt="billede af frivillig Magnus">
-              <h4>Magnus</h4>
-            </div>
-          </div>
-          <div class="drikkevare__column drikkevare__all">
-            <div class="drikkevare__photo">
-              <img src="billeder/AKVAVIT.webp" alt="billede af frivillig Ida">
-              <h4>Ida</h4>
-            </div>
-          </div>
-          <div class="drikkevare__column drikkevare__all">
-            <div class="drikkevare__photo">
-              <img src="billeder/Cider.webp" alt="billede af frivillig Laura">
-              <h4>Laura</h4>
-            </div>
-          </div>
-          
-          <div class="drikkevare__olumn drikkevare__gin">
-            <div class="drikkevare__photo">
-              <img src="billeder/Gin.webp" alt="billede af frivillig Frederik">
-              <h4>Frederik</h4>
-            </div>
-          </div>
-          <div class="drikkevare__column drikkevare__kaffe">
-            <div class="drikkevare__photo">
-              <img src="billeder/kaffe.webp" alt="billede af frivillig Aisha">
-              <h4>Aisha</h4>
-            </div>
-          </div>
-          <div class="drikkevare__column drikkevare__juice">
-            <div class="drikkevare__photo">
-              <img src="billeder/Most.webp" alt="billede af frivillig Tung">
-              <h4>Tung</h4>
-            </div>
-          </div>
-          <div class="drikkevare__column drikkevare__juice">
-            <div class="drikkevare__photo">
-              <img src="billeder/Most_2.webp" alt="billede af frivillig Sofie">
-              <h4>Sofie</h4>
-            </div>
-          </div>
-          <div class="drikkevare__column drikkevare__vin">
-            <div class="drikkevare__photo">
-              <img src="billeder/Red-Win.webp" alt="billede af frivillig Oscar">
-              <h4>Oscar</h4>
-            </div>
-          </div>
-          <div class="drikkevare__column drikkevare__øl">
-            <div class="drikkevare__photo">
-              <img src="billeder/ØL.webp" alt="billede af frivillig Noor">
-              <h4>Noor</h4>
-            </div>
-          </div>
-          <div class="drikkevare__photocolumn drikkevare__øl">
-            <div class="drikkevare__photo">
-              <img src="billeder/øl_2.webp" alt="billede af frivillig Emil">
-              <h4>Emil</h4>
-            </div>
-          </div>
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </section>
+  
   </div>
 </div>
 
