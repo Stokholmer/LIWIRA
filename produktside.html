@@ -59,19 +59,9 @@
     </div>
   </header>
     <main>
-   <!DOCTYPE html>
-<html lang="da">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Drikkevarer</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-</head>
-<body>
 
   <section class="drinks">
-    <h2>Drikkevarer</h2>
+    <h2 class="drinks__btn-container">Drikkevarer</h2>
 
     <div class="drinks__btn-container" id="drinks__btn-container">
       <button class="drinks__btn active" data-filter="drinks__alle">Alle</button>
@@ -82,11 +72,11 @@
 
     <div class="drinks__grid">
       <!-- 4 kolde -->
-      <div class="drinks__item drinks__kolde drinks__show">
-        <img src="Billeder/sobe_1.webp" alt="Sobe Mango" class="drinks__image" />
+      <div class="drinks__item drinks__alkohol drinks__show">
+        <img src="Billeder/Gin&mango.webp" alt="Gin Mango" class="drinks__image" />
         <div class="drinks__content">
-          <p class="drinks__brand">Sobe</p>
-          <h3>MANGO<br>PASSION</h3>
+          <p class="drinks__brand">Nyborg Destilleri</p>
+          <h3>Gin & <br>MANGO</h3>
           <div class="drinks__footer">
             <span class="drinks__price">35,00 Kr.</span>
             <span class="material-symbols-outlined">add_shopping_cart</span>
@@ -95,85 +85,85 @@
       </div>
 
       <div class="drinks__item drinks__kolde drinks__show">
-        <img src="Billeder/cola.webp" alt="Cola Zero" class="drinks__image" />
+        <img src="Billeder/Most.webp" alt="Kirsebær most" class="drinks__image" />
         <div class="drinks__content">
-          <p class="drinks__brand">Coca-Cola</p>
-          <h3>COLA<br>ZERO</h3>
+          <p class="drinks__brand">Selleberg</p>
+          <h3>Kirsebær <br>most</h3>
           <div class="drinks__footer">
-            <span class="drinks__price">20,00 Kr.</span>
+            <span class="drinks__price">65,00 Kr.</span>
             <span class="material-symbols-outlined">add_shopping_cart</span>
           </div>
         </div>
       </div>
 
-      <div class="drinks__item drinks__kolde drinks__show">
-        <img src="Billeder/lemonade.webp" alt="Citron Lemonade" class="drinks__image" />
+      <div class="drinks__item drinks__varme drinks__show">
+        <img src="Billeder/kaffe.webp" alt="Langeskov kaffen" class="drinks__image" />
         <div class="drinks__content">
-          <p class="drinks__brand">Limon</p>
-          <h3>CITRON<br>LEMONADE</h3>
+          <p class="drinks__brand">KoffiRoast</p>
+          <h3>Langeskov <br> kaffe</h3>
           <div class="drinks__footer">
-            <span class="drinks__price">28,00 Kr.</span>
+            <span class="drinks__price">89,00 Kr.</span>
             <span class="material-symbols-outlined">add_shopping_cart</span>
           </div>
         </div>
       </div>
 
-      <div class="drinks__item drinks__kolde drinks__show">
-        <img src="Billeder/ice_tea.webp" alt="Ice Tea Peach" class="drinks__image" />
+      <div class="drinks__item drinks__alkohol drinks__show">
+        <img src="Billeder/AKVAVIT.webp" alt="Dild Nyborg Akvavit" class="drinks__image" />
         <div class="drinks__content">
-          <p class="drinks__brand">Fuze</p>
-          <h3>ICE TEA<br>PEACH</h3>
+          <p class="drinks__brand">Nyborg Destilleri</p>
+          <h3>Dild<br>Nyborg akvavit</h3>
           <div class="drinks__footer">
-            <span class="drinks__price">25,00 Kr.</span>
+            <span class="drinks__price">150 Kr.</span>
             <span class="material-symbols-outlined">add_shopping_cart</span>
           </div>
         </div>
       </div>
 
       <!-- 4 varme -->
-      <div class="drinks__item drinks__varme drinks__show">
-        <img src="Billeder/kaffe.webp" alt="Kaffe" class="drinks__image" />
+      <div class="drinks__item drinks__alkohol drinks__show">
+        <img src="Billeder/øl_2.webp" alt="øl - Sol over Sundet" class="drinks__image" />
         <div class="drinks__content">
-          <p class="drinks__brand">KaffeKunst</p>
-          <h3>ØKO<br>KAFFE</h3>
+          <p class="drinks__brand">Craft Beer</p>
+          <h3>Sol over <br> Sundet</h3>
           <div class="drinks__footer">
-            <span class="drinks__price">30,00 Kr.</span>
+            <span class="drinks__price">65,00 Kr.</span>
             <span class="material-symbols-outlined">add_shopping_cart</span>
           </div>
         </div>
       </div>
 
-      <div class="drinks__item drinks__varme drinks__show">
-        <img src="Billeder/te.webp" alt="Grøn Te" class="drinks__image" />
+      <div class="drinks__item drinks__alkohol drinks__show">
+        <img src="Billeder/Cider.webp" alt="Cider med Rabarbersmag" class="drinks__image" />
         <div class="drinks__content">
-          <p class="drinks__brand">Tehuset</p>
-          <h3>GRØN<br>TE</h3>
+          <p class="drinks__brand">Himmelstund</p>
+          <h3>Cider<br>Rabarbersmag</h3>
           <div class="drinks__footer">
-            <span class="drinks__price">25,00 Kr.</span>
+            <span class="drinks__price">139,00 Kr.</span>
             <span class="material-symbols-outlined">add_shopping_cart</span>
           </div>
         </div>
       </div>
 
-      <div class="drinks__item drinks__varme drinks__show">
-        <img src="Billeder/varm_kakao.webp" alt="Varm Kakao" class="drinks__image" />
+      <div class="drinks__item drinks__kolde drinks__show">
+        <img src="Billeder/Most_2.webp" alt="Æblemost med jordbær" class="drinks__image" />
         <div class="drinks__content">
-          <p class="drinks__brand">ChokoBar</p>
-          <h3>VARM<br>KAKAO</h3>
+          <p class="drinks__brand">Nybro frugtplantage</p>
+          <h3>Æblemost <br>med jordbær</h3>
           <div class="drinks__footer">
-            <span class="drinks__price">32,00 Kr.</span>
+            <span class="drinks__price">65,ooKr.</span>
             <span class="material-symbols-outlined">add_shopping_cart</span>
           </div>
         </div>
       </div>
 
-      <div class="drinks__item drinks__varme drinks__show">
-        <img src="Billeder/latte.webp" alt="Vanilje Latte" class="drinks__image" />
+      <div class="drinks__item drinks__alkohol drinks__show">
+        <img src="Billeder/ØL.webp" alt="øl - Kongshøj klassikeren" class="drinks__image" />
         <div class="drinks__content">
-          <p class="drinks__brand">LatteLove</p>
-          <h3>VANILJE<br>LATTE</h3>
+          <p class="drinks__brand">Kertemide bryggeri</p>
+          <h3>Kongshøj<br>klassikeren</h3>
           <div class="drinks__footer">
-            <span class="drinks__price">38,00 Kr.</span>
+            <span class="drinks__price">35,00 Kr.</span>
             <span class="material-symbols-outlined">add_shopping_cart</span>
           </div>
         </div>
@@ -181,10 +171,10 @@
 
       <!-- 4 alkohol -->
       <div class="drinks__item drinks__alkohol drinks__show">
-        <img src="Billeder/vin.webp" alt="Rødvin" class="drinks__image" />
+        <img src="Billeder/Red-Win.webp" alt="Rødvin" class="drinks__image" />
         <div class="drinks__content">
-          <p class="drinks__brand">Vinhuset</p>
-          <h3>SYRAH<br>RØDVIN</h3>
+          <p class="drinks__brand">Manos</p>
+          <h3>Rødvin</h3>
           <div class="drinks__footer">
             <span class="drinks__price">125,00 Kr.</span>
             <span class="material-symbols-outlined">add_shopping_cart</span>
@@ -192,11 +182,11 @@
         </div>
       </div>
 
-      <div class="drinks__item drinks__alkohol drinks__show">
-        <img src="Billeder/hvidvin.webp" alt="Hvidvin" class="drinks__image" />
+      <div class="drinks__item drinks__kolde drinks__show">
+        <img src="Billeder/Is-kaffe.webp" alt="Hvidvin" class="drinks__image" />
         <div class="drinks__content">
-          <p class="drinks__brand">Vinorama</p>
-          <h3>CHARDONNAY<br>HVIDVIN</h3>
+          <p class="drinks__brand">Wild appetite</p>
+          <h3>Iced coffe<br>caramel</h3>
           <div class="drinks__footer">
             <span class="drinks__price">119,00 Kr.</span>
             <span class="material-symbols-outlined">add_shopping_cart</span>
@@ -205,22 +195,22 @@
       </div>
 
       <div class="drinks__item drinks__alkohol drinks__show">
-        <img src="Billeder/øl.webp" alt="Mørk Øl" class="drinks__image" />
+        <img src="Billeder/Gin.webp" alt="Gin" class="drinks__image" />
         <div class="drinks__content">
-          <p class="drinks__brand">Bryghuset</p>
-          <h3>MØRK<br>ØL</h3>
+          <p class="drinks__brand">DEW</p>
+          <h3>Gin 87%</h3>
           <div class="drinks__footer">
-            <span class="drinks__price">35,00 Kr.</span>
+            <span class="drinks__price">235,00 Kr.</span>
             <span class="material-symbols-outlined">add_shopping_cart</span>
           </div>
         </div>
       </div>
 
       <div class="drinks__item drinks__alkohol drinks__show">
-        <img src="Billeder/cocktail.webp" alt="Cocktail" class="drinks__image" />
+        <img src="Billeder/øl_2.webp" alt="Cocktail" class="drinks__image" />
         <div class="drinks__content">
-          <p class="drinks__brand">Mixology</p>
-          <h3>PASSION<br>MOJITO</h3>
+          <p class="drinks__brand">Craft Beer</p>
+          <h3>Sol over <br> Sundet</h3>
           <div class="drinks__footer">
             <span class="drinks__price">65,00 Kr.</span>
             <span class="material-symbols-outlined">add_shopping_cart</span>
@@ -229,7 +219,7 @@
       </div>
     </div>
   </section>
-  
+
   </div>
 </div>
 
