@@ -103,6 +103,7 @@ font-family: "Playfair Display", serif;
   font-weight:900;
   font-size: 2rem;
   color: #202815;
+  text-decoration: none;
 }
 
 .material-symbols-outlined {
@@ -159,8 +160,9 @@ font-family: "Playfair Display", serif;
   min-height: 250px;
   max-height: 500px;
   height: 100%;
-  object-fit: cover; /* fill the container and crop as needed */
+  object-fit: cover;
   display: block;
+  border: 2px solid #465C26;
  
 }
 
@@ -171,16 +173,20 @@ font-family: "Playfair Display", serif;
   color: #F0ECE3;
   font-family: "Playfair Display", serif;
   font-size: 2rem;
+  text-decoration: underline;
 }
 
-.hero .hero_text_right h2{
+.hero .hero_text_right a{
   padding: 20px;
   position: absolute;
   bottom: 10%;
   right: 2%; 
+  font-family: "Playfair Display", serif;
   color: #F0ECE3;
   text-align: right;
+  font-weight:900;
   font-size: 2rem;
+  text-decoration: underline;
 }
 
   /* Categories */
@@ -193,15 +199,14 @@ font-family: "Playfair Display", serif;
 }
 
 .category {
-  width: 33.3333%; /* 3 per row by default */
-  padding: 0.5rem;  /* optional spacing */
+  width: 33.3333%; 
+  padding: 0.5rem;  
   box-sizing: border-box;
   text-align: center;
   flex: 0 0 calc(33.3333% - 1rem);
   
 }
 
-/* Base image styling */
 .categories__img {
   width: 100%;
   height: auto;
@@ -210,7 +215,6 @@ font-family: "Playfair Display", serif;
   object-fit: cover;
 }
 
-/* Label styling */
 .category__label {
   margin-top: 8px;
   font-size: 16px;
@@ -292,7 +296,7 @@ font-family: "Playfair Display", serif;
     'wght' 400,
     'GRAD' 0,
     'opsz' 24;
-  font-size: 48px; /* Change icon size */
+  font-size: 48px; 
   padding: 0px 5px 5px 15px;
   color: #465C26;
 }
@@ -393,7 +397,7 @@ font-family: "Playfair Display", serif;
 .event__date {
   align-self: center;
   text-align: center;
-  border: 5px solid #465C26;
+  border: 6px solid #465C26;
   border-radius: 50%;
   padding: 0.5rem 1rem;
   font-weight: bold;
@@ -487,20 +491,18 @@ font-family: "Playfair Display", serif;
 }
 
 .footer__icons a:hover {
-  color: #ccc; /* or a brand color */
+  color: #F0ECE3; 
 }
 
 
-/* Category site - Drinks */
+/* Drinks */
 .drinks {
 
   font-family: "Roboto", sans-serif;
   padding-bottom: 20%;
 }
 
-/* --- FILTER BUTTONS --- */
 
-/* Button container layout: 2 per row on mobile */
 .drinks__btn-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -509,7 +511,6 @@ font-family: "Playfair Display", serif;
   padding: 0 3%;
 }
 
-/* Individual buttons */
 .drinks__btn {
   display: inline-block;
   width: 100%;
@@ -535,9 +536,6 @@ font-family: "Playfair Display", serif;
   color: #FFFBF7;
 }
 
-/* --- PRODUCT GRID --- */
-
-/* Mobile grid: 2 items per row */
 .drinks__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -545,7 +543,6 @@ font-family: "Playfair Display", serif;
   padding: 0 3%;
 }
 
-/* Product card */
 .drinks__item {
   border: 2px solid #465C26;
   background-color: #fefcf8;
@@ -554,7 +551,6 @@ font-family: "Playfair Display", serif;
   overflow: hidden;
 }
 
-/* Product image */
 .drinks__image {
   width: 100%;
   display: block;
@@ -562,7 +558,6 @@ font-family: "Playfair Display", serif;
   border-bottom: 2px solid #465C26;
 }
 
-/* Product text content */
 .drinks__content {
   padding: 12px;
   display: flex;
@@ -577,7 +572,6 @@ font-family: "Playfair Display", serif;
   margin: 0;
 }
 
-/* Footer with price and cart icon */
 .drinks__footer {
   display: flex;
   justify-content: space-between;
@@ -604,12 +598,10 @@ font-family: "Playfair Display", serif;
     font-size: 2.5rem;
   }
 
-  /* Grid: 4 products per row */
   .drinks__grid {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  /* Filter buttons in 1 row */
   .drinks__btn-container {
     grid-template-columns: repeat(4, 1fr);
     margin-left: auto;
@@ -664,7 +656,7 @@ font-family: "Playfair Display", serif;
 
 
 .top-sellers__item {
-    width: calc(25% - 12px); /* 4 per row on desktop */
+    width: calc(25% - 12px); 
   }
 
   .about-us{
