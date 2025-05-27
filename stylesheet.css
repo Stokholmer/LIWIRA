@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   padding-top: 60px;
-  background-color: #F0ECE3;
+  background-color: #FFFBF7;
 }
 
 .layout{
@@ -159,6 +159,7 @@ font-family: "Playfair Display", serif;
   text-align: right;
 }
 
+  /* Mobile-first grid: 3 columns */
 .categories {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -166,6 +167,16 @@ font-family: "Playfair Display", serif;
   padding: 20px;
 }
 
+.category {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 150px; /* Optional: ensures consistent height */
+}
+
+/* Base image styling */
 .categories__img {
   width: 100%;
   height: auto;
@@ -174,13 +185,22 @@ font-family: "Playfair Display", serif;
   object-fit: cover;
 }
 
-/* gem på mobile */
-.categories__img__desktop {
+/* Hide images and text with desktop-only class on mobile */
+.category--desktop-only {
   display: none;
 }
 
+/* Label styling */
+.category__label {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+
 .top-sellers {
   padding: 20px;
+  background-color: #F0ECE3;
 }
 
 .top-sellers__grid {
@@ -543,9 +563,11 @@ font-family: "Playfair Display", serif;
     grid-template-columns: repeat(6, 1fr);
   }
 
-  .categories__img__desktop {
+  /* Show desktop-only items */
+  .category--desktop-only {
     display: block;
   }
+
 
 .top-sellers__item {
     width: calc(25% - 12px); /* 4 per row on desktop */
@@ -586,6 +608,8 @@ font-family: "Playfair Display", serif;
     max-width: 1200px;
     margin: 0 auto;
   }
+
+
 }
 
 
