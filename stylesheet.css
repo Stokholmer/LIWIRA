@@ -33,6 +33,14 @@ h3 {
   text-transform:uppercase;
 }
 
+h4 {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
 p{
     font-family: "Roboto", sans-serif;
 }
@@ -293,13 +301,13 @@ font-family: "Playfair Display", serif;
   padding: 20px;
   align-items: center;
    padding-bottom: 15%;
+  max-height: 300px;
+
 }
 
 .about-us__image img {
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-position: center;
 }
 
 .about-us__content {
@@ -444,14 +452,6 @@ font-family: "Playfair Display", serif;
 
 .footer__column {
   font-family: "Roboto", sans-serif;
-}
-
-.footer__heading {
-  font-family: "Playfair Display", serif;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
 }
 
 .footer__text {
@@ -668,8 +668,7 @@ font-family: "Playfair Display", serif;
   }
 
   .about-us__image {
-    width: 50%;
-    height: 300px;
+
   }
 
   .about-us__content {
