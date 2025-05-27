@@ -546,7 +546,7 @@ font-family: "Playfair Display", serif;
 .drinks__item {
   border: 2px solid #465C26;
   background-color: #fefcf8;
-  display: flex;
+  display: none;
   flex-direction: column;
   overflow: hidden;
 }
@@ -570,6 +570,10 @@ font-family: "Playfair Display", serif;
   font-style: italic;
   font-size: 0.9rem;
   margin: 0;
+}
+
+.drinks__show {
+  display: flex;
 }
 
 .drinks__footer {
